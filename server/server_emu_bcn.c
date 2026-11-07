@@ -232,7 +232,7 @@ static int tx_class(VkFormat t)
 int vkb_emu_bcn_transcode_wanted(void)
 {
     const char *v = vkb_srv_env("VKBRIDGE_BC_TRANSCODE"); /* <cache dir>/env too, read at device creation */
-    return !v || strcmp(v, "0");
+    return v && strcmp(v, "0");
 }
 
 /* VKBRIDGE_BC_TRANSCODE_QUALITY: auto (the default), fast, default or high (unknown values: auto).
