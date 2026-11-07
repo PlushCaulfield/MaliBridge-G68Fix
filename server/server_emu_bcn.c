@@ -495,7 +495,7 @@ static VkFormat packed_format(const bcn_state *s, const VkImageCreateInfo *ci, c
  *     green squares, DroidDeck#218);
  *   - the decoded images' extra memory is capped lower (AUTO_FALLBACK: a 48th of the heap, 64-256 MB:
  *     8 GB phones are where memory runs out). */
-#define BUDGET_DEFAULT "0"
+#define BUDGET_DEFAULT "auto"
 #define PIN_SLOTS 4096 /* per device; full: no more decoding over the budget on it */
 #define AUTO_DEFAULT_COST 2.0
 #define AUTO_HIGH_COST 3.0
