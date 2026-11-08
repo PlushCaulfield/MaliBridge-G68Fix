@@ -65,7 +65,7 @@ static texcap *state(void)
 static int parse(texcap *t)
 {
     const char *v = vkb_srv_env("VKBRIDGE_TEX_MAXDIM"); /* <cache dir>/env and presets too */
-    if (!v) v = "1024";
+    if (!v) v = "512";
 if (!*v) return 0;
     char *end;
     unsigned long n = strtoul(v, &end, 10);
