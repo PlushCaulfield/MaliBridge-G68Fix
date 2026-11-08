@@ -918,7 +918,7 @@ static VKAPI_ATTR void VKAPI_CALL as_CmdDrawIndirectByteCountEXT(VkCommandBuffer
 void vkb_async_device_init(vkb_srv_table *t)
 {
     const char *on_s = vkb_srv_env("VKBRIDGE_ASYNC_COMPILE");
-    if (!on_s) on_s = "defer";
+    if (!on_s) on_s = "1";
     const char *im_s = vkb_srv_env("VKBRIDGE_ASYNC_COMPILE_IMITATE_MS");
     const char *w_s = vkb_srv_env("VKBRIDGE_ASYNC_COMPILE_WAIT_MS");
     const char *n_s = vkb_srv_env("VKBRIDGE_ASYNC_COMPILE_THREADS");
