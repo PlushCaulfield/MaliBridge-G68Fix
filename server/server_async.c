@@ -76,7 +76,7 @@
 #include <unistd.h>
 
 #define ASYNC_QUEUE_MAX 1024 /* per device: past it, compiles are synchronous again */
-#define ASYNC_THREADS_DEFAULT 2
+#define ASYNC_THREADS_DEFAULT 4
 #define ASYNC_THREADS_MAX 8
 #define ASYNC_WAIT_MS_DEFAULT 2.0
 #define ASYNC_LOG_PERIOD_S 30
